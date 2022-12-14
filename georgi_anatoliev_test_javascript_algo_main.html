@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript_test_je1.js"></script>
+    <script src="georgi_anatoliev_test_javascript_algo_ex1.js"></script>
+    <script src="georgi_anatoliev_test_javascript_algo_ex2.js"></script>
+    <script src="georgi_anatoliev_test_javascript_algo_ex3.js"></script>
+    <title>Sudoku</title>
+</head>
+<body>
+  <div id="sudoku" style="text-align: center;width: 500px;"></div>
+  <div id="lineError"></div>
+  <div id="columnError"></div>
+  <div id="regionError"></div>
+
+  
+  
+ 
+  <script> 
+  document.addEventListener("DOMContentLoaded", function() {
+  sudokuGrid();
+  createTable();
+  checkSudokuLines(testArray);
+  checkSudokuColumns(testArray);
+  checkSudokuRegion(testArray);
+  });
+  </script>
+
+</body>
+</html>
